@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The Cake Place</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <style>
+       .header-bg {
+           background-color: #ffcccb; /* Light pink background */
+       }
+       .section-bg {
+           background-color: #f9f9f9; /* Light orange background */
+       }
+       .shadow {
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+       }
+       .table-header {
+           background-color: #ffcccb; /* Light red background */
+           color: white;
+       }
+       .video {
+      display: flex;
+      margin-left:auto;
+      margin-right:auto;
+       }
+       button {
+            background-color: #b2e0b2; /* Baby green */
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+   </style>
+</head>
+<body>
+
+   <!-- Header Section -->
+   <div class="section header-bg center-align">
+       <h1 class="white-text">Welcome to The Cake Place</h1>
+       <p class="white-text">Fresh Cakes All Day, Every Day</p>
+       <div> 
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='aboutus.html'">About Us</button>
+        <button onclick="window.location.href='learnmore.html'">Learn More</button>
+        <button onclick="window.location.href='jquery.html'">JQuery</button>
+        <button onclick="window.location.href='bootstrap.html'">Bootstrap</button>
+    </div>
+   </div>
+
+
+   <!-- About Us Section -->
+   <div id="about" class="section section-bg">
+       <div class="container">
+           <div class="row">
+               <div class="col s12 m6">
+              
+                   <h2>About Us</h2>
+                   <p>At The Cake Place, we pride ourselves on creating delicious, freshly baked treats that bring joy to every celebration, using only the finest ingredients and a passion for perfection in every bite.</p>
+               </div>
+               <div class="col s12 m6">
+                   <img src="https://curlygirlkitchen.com/wp-content/uploads/2022/06/Floral-Folklore-Piped-Buttercream-Flowers-Cake-Red-Yellow-Turquoise-Blue-017.jpg" alt="Bakery Image" class="responsive-img shadow" style="width:150px;height:200px">
+                   <img src="https://www.lifeloveandsugar.com/wp-content/uploads/2014/08/Best-Moist-Chocolate-Cake1-1.jpg" alt="Cake Image" class="responsive-img shadow" style="width:150px;height:200px">
+                   <img src="https://chelsweets.com/wp-content/uploads/2022/11/recipe-card-penguin-cake-closer-735x980.jpg" alt="Cake" class="responsive-img shadow" style="width:125px;height:200px">
+               </div>
+           </div>
+       </div>
+   </div>
+
+   <!-- Menu Section -->
+   <div id="menu" class="section">
+       <div class="container">
+           <h2>Customer Favorites</h2>
+           <table class="highlight">
+               <thead class="table-header">
+                   <tr>
+                       <th>Flavor</th>
+                       <th>Item</th>
+                       <th>Description</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <td>Classic Birthday</td>
+                       <td>Vanilla Sponge Cake</td>
+                       <td>A classic vanilla cake with a soft side.</td>
+                   </tr>
+                   <tr>
+                       <td>Special Occasion</td>
+                       <td>Chocolate Cake</td>
+                       <td>Made with coco powder and melted chocolate.</td>
+                   </tr>
+                   <tr>
+                       <td>Elegant Wedding</td>
+                       <td>Red Velvet Cake</td>
+                       <td>A cake with a vibrant color and a tangy flavor.</td>
+                   </tr>
+                   <tr>
+                       <td>Custom Theme</td>
+                       <td>Variety of Flavors</td>
+                       <td>Many delicious cake flavors</td>
+                   </tr>
+               </tbody>
+           </table>
+       </div>
+       
+       <div class="row">
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row valign-wrapper">
+              <div class="col s2" style="padding-right: 10px;"> <!-- Padding to create space around image -->
+                <img src="https://www.shutterstock.com/image-photo/middle-age-beautiful-baker-woman-600nw-1662027505.jpg" 
+                     alt="Hannah" 
+                     class="circle" 
+                     style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%;">
+              </div>
+              <div class="col s10" style="margin-left: 40px;"> <!-- Increased left margin for more spacing -->
+                <span class="black-text">
+                  Our head baker, Hannah, is a master of flavor and artistry, blending years of experience and a passion for perfection to create exceptional, unforgettable cakes.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/qtlhdIfojmc?si=IYmke9U4XP2LHsyr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="video"></iframe> </iframe>
+     
+      <div id="radio-section" class="section container">
+        <h2>Select Your Favorite Flavor</h2>
+        <form>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Chocolate" onclick="displayPastry()"/>
+                    <span>Chocolate</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Vanilla" onclick="displayPastry()"/>
+                    <span>Vanilla</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Red Velvet" onclick="displayPastry()"/>
+                    <span>Red Velvet</span>
+                </label>
+            </p>
+        </form>
+        <div id="pastry-response"></div>
+    </div>
+    <script>
+        // Initialize modal
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+ 
+ 
+        // Function to display selected pastry
+        function displayPastry() {
+            const selectedPastry = document.querySelector('input[name="pastry"]:checked').value;
+            document.getElementById('pastry-response').innerText = `You selected: ${selectedPastry}`;
+        }
+        // Function to handle email subscription form submission
+        function submitEmail(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            document.getElementById('email-response').innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+            document.getElementById('email').value = ''; // Clear the input
+ 
+ 
+            // Display modal
+            const modalText = document.getElementById('modal-content-text');
+            modalText.innerText = `Thank you for subscribing! Updates will be sent to: ${email}`;
+            const modal = M.Modal.getInstance(document.getElementById('modal1'));
+            modal.open();
+        }
+    </script>
+ 
+    
+   <!-- Contact Section -->
+   <div id="contact" class="section section-bg">
+       <div class="container">
+           <h2>Contact Us</h2>
+           <div class="row">
+               <div class="col s12 m6">
+                   <form>
+                       <div class="input-field">
+                           <input id="name" type="text" class="validate">
+                           <label for="name">Name</label>
+                       </div>
+                       <div class="input-field">
+                           <input id="email" type="email" class="validate">
+                           <label for="email">Email</label>
+                       </div>
+                       <div class="input-field">
+                           <textarea id="message" class="materialize-textarea"></textarea>
+                           <label for="message">Message</label>
+                       </div>
+                       <button type="submit" class="btn waves-effect waves-light">Send</button>
+                   </form>
+               </div>
+               <div class="col s12 m6">
+                   <h5>Visit Us</h5>
+                   <p>123 Bakery St,<br> Akron, OH 44313</p>
+                   <p><i class="material-icons">phone</i> (123) 456-7890</p>
+                   <p><i class="material-icons">email</i> contact@thecakeplace.com</p>
+               </div>
+           </div>
+       </div>
+   </div>
+
+
+   <!-- Footer -->
+   <footer class="page-footer header-bg">
+       <div class="container">
+           <div class="row">
+               <div class="col s12 center-align">
+                   <p class="white-text">&copy; 2024 The Cake Place. All rights reserved.</p>
+               </div>
+           </div>
+       </div>
+   </footer>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</body>
+</html>

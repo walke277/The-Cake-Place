@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More - The Cake Place</title>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9; /* White background */
+        }
+        header {
+            background-color: #ffcccb; /* Baby blue */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 15px;
+            background-color: #b2e0b2; /* Baby pink */
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #b2e0b2; /* Darker pink on hover */
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #777;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ffcccb; /* Baby green for header */
+        }
+        ul {
+            list-style-type: disc; /* Bullet points for lists */
+            padding-left: 20px; /* Indent list */
+        }
+        aside {
+            background-color: #f9f9f9; /* Light lavender for the aside */
+            padding: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #f9f9f9;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+          }
+          button {
+            background-color: #b2e0b2; /* Baby green */
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Learn More About The Cake Place</h1>
+    <h2>Your Go-To Bakery for All Things Sweet</h2>
+    <div> 
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='aboutus.html'">About Us</button>
+        <button onclick="window.location.href='materialize.html'">Materialize</button>
+        <button onclick="window.location.href='jquery.html'">JQuery</button>
+        <button onclick="window.location.href='bootstrap.html'">Bootstrap</button>
+    </div>
+</header>
+
+
+<section>
+    <h3>What Makes Us Unique?</h3>
+    <p>At <strong>The Cake Place</strong>, we pride ourselves on crafting cakes that not only taste amazing but also look stunning. Our secret lies in using the finest ingredients and innovative baking techniques that elevate your cake experience. From traditional recipes to modern trends, we cater to every palate and preference.</p>
+    <p>We understand that each event is special, which is why we offer a range of services including <em>custom cake designs</em>, consultations, and tasting sessions. Whether you're celebrating a birthday, wedding, or any other milestone, our team is dedicated to creating the perfect cake tailored just for you!</p>
+</section>
+
+<section>
+    <img src="https://cakebycourtney.com/wp-content/uploads/2016/05/cakeV_104.jpg" alt="cake" class="center" style="width:500px;height:300px">
+    <h3>Our Offerings</h3>
+    <ul>
+        <li><strong>Custom Cake Design:</strong> Work with our designers to create a cake that reflects your theme.</li>
+        <li><strong>Cake Tasting:</strong> Sample various flavors before making a choice.</li>
+        <li><strong>Delivery Options:</strong> Convenient delivery services to ensure your cake arrives fresh.</li>
+        <li><strong>Special Requests:</strong> Gluten-free, vegan, and allergy-friendly options available!</li>
+    </ul>
+</section>
+
+<aside>
+    <h3>Fun Fact!</h3>
+    <p>Did you know that our <u>most popular flavor</u> is the chocolate raspberry cake? It’s a delightful combination of rich chocolate cake layered with fresh raspberry filling!</p>
+</aside>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Round Cakes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    .cake-section {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .cake-description {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+    .cake-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .cake-label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Round Cakes Section -->
+  <div class="container cake-section">
+    <h4>Round Cakes</h4>
+    <p class="cake-description">All our round cakes are 2-layer cakes, perfect for any occasion.</p>
+    <div class="row">
+      <!-- 4" Cake -->
+      <div class="col s12 m4 l2">
+        <img src="https://baranbakery.com/wp-content/uploads/2022/01/4-Inch-Cake.jpg" alt="4-inch Cake" class="cake-image">
+        <p class="cake-label">4" Cake</p>
+        <p class="cake-info">Serves: 2 people</p>
+        <p class="cake-info">Price: $20</p>
+      </div>
+      <!-- 6" Cake -->
+      <div class="col s12 m4 l2">
+        <img src="https://easycakefactory.com/wp-content/uploads/2022/03/R1.jpg" alt="6-inch Cake" class="cake-image">
+        <p class="cake-label">6" Cake</p>
+        <p class="cake-info">Serves: 10 people</p>
+        <p class="cake-info">Price: $50</p>
+      </div>
+      <!-- 8" Cake -->
+      <div class="col s12 m4 l2">
+        <img src="https://stylesweet.com/wp-content/uploads/2023/03/Yellow8inchCake_03.jpg" alt="8-inch Cake" class="cake-image">
+        <p class="cake-label">8" Cake</p>
+        <p class="cake-info">Serves: 20 people</p>
+        <p class="cake-info">Price: $65</p>
+      </div>
+      <!-- 10" Cake -->
+      <div class="col s12 m4 l2">
+        <img src="https://baranbakery.com/wp-content/uploads/2022/01/10-inch-cake-683x1024.jpg" alt="10-inch Cake" class="cake-image">
+        <p class="cake-label">10" Cake</p>
+        <p class="cake-info">Serves: 30 people</p>
+        <p class="cake-info">Price: $85</p>
+      </div>
+      <!-- 12" Cake -->
+      <div class="col s12 m4 l2">
+        <img src="https://cakebon.com/wp-content/uploads/2020/06/Cakebon-Steve-IMAGE-14-V1-Web.jpg" alt="12-inch Cake" class="cake-image">
+        <p class="cake-label">12" Cake</p>
+        <p class="cake-info">Serves: 40 people</p>
+        <p class="cake-info">Price: $95</p>
+      </div>
+      <!-- Wedding Cake -->
+      <div class="col s12 m4 l2">
+        <img src="https://i.pinimg.com/236x/ff/b9/7f/ffb97fde0493b09f80bf1a69f5cc14e7.jpg" alt="Wedding Cake" class="cake-image">
+        <p class="cake-label">Wedding Cake</p>
+        <p class="cake-info">Serves: Varies per Cake</p>
+        <p class="cake-info">Price: Varies per Size and Decor</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Materialize JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+<footer>
+    <p>If you have any questions or would like to place an order, please reach out to us at <u>contact@thecakeplace.com</u> or call us at <u>(123) 456-7890</u>. &copy; 2024 The Cake Place. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

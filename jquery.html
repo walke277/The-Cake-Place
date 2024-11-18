@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cake Place</title>
+
+    <!-- Link to jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #ffcccb;
+            padding: 20px 0;
+        }
+        header h1 {
+            font-size: 36px;
+            color: #444;
+            margin: 0;
+        }
+        .navbar {
+            margin-top: 10px;
+        }
+        .navbar button {
+            background-color: #b2e0b2; /* Updated color */
+            color: #333;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        .navbar button:hover {
+            background-color: #9ec7a4; /* Slightly darker shade of #b2e0b2 for hover */
+        }
+        /* Accordion styles */
+        .accordion h3 {
+            background-color: #ffcccb;
+            cursor: pointer;
+            padding: 10px;
+            margin: 0;
+            border: 1px solid #ccc;
+        }
+        .accordion div {
+            padding: 10px;
+            display: none;
+            background-color: #fff;
+            border-left: 1px solid #ccc;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+        /* Tooltip styles */
+        .tooltip {
+            border-bottom: 1px dotted #444;
+            cursor: help;
+            display: inline-block;
+            position: relative;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        /* Lightbox styles */
+        #lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+            color: white;
+        }
+        #lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+        #lightbox .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+            background: #ffcccb;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* New Section Styles */
+        .hidden-section {
+            display: none;
+            padding: 20px;
+            background-color: #e5e5e5;
+            margin-top: 20px;
+        }
+        .fade-section {
+            padding: 20px;
+            background-color: #ffcccb;
+            margin-top: 20px;
+            display: none;
+        }
+
+        .about-text {
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 5px;
+            border: 1px solid #000; /* Added thin black border */
+        }
+
+        /* Customer Testimonials Section */
+        .testimonials {
+            margin-top: 20px;
+            background-color: #ffffff; /* Background color changed to #ffcccb */
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .testimonials p {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 20px;
+            background-color: #ffffff; /* Background color changed to #ffcccb */
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-top: 20px;
+        }
+        .faq h3 {
+            margin-top: 10px;
+            color: #ff6666;
+            background-color: #ffcccb;
+            padding: 10px;
+        }
+
+        .faq p.question {
+            font-weight: bold; /* Bold for questions */
+            color: black; /* Black text color for questions */
+            margin-bottom: 10px;
+        }
+
+        .faq p.answer {
+            font-weight: normal; /* Normal weight for answers */
+            color: black; /* Black color for answers */
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header of the website -->
+    <header>
+        <h1>Welcome to The Cake Place</h1>
+        <div class="navbar">
+            <button onclick="window.location.href='index.html'">Home</button>
+            <button onclick="window.location.href='aboutus.html'">About Us</button>
+            <button onclick="window.location.href='learnmore.html'">Learn More</button>
+            <button onclick="window.location.href='materialize.html'">Materialize</button>
+            <button onclick="window.location.href='bootstrap.html'">Bootstrap</button>
+        </div>
+    </header>
+
+    <h1>Our Menu at The Cake Place</h1>
+    <p>Explore our delightful selection of cakes, fillings, and specialty items crafted to satisfy every sweet tooth. Each item on our menu is made with high-quality ingredients and a passion for creating memorable experiences. Listed below are our most popular choices in Cakes, Fillings, and Specialty Items.</p>
+
+    <!-- Accordion Section for Menu Categories -->
+    <div class="accordion">
+        <h3>Cakes</h3>
+        <div>
+            <p><span class="tooltip" title="A rich and moist chocolate cake">Chocolate Cake</span></p>
+            <p><span class="tooltip" title="Classic vanilla sponge with buttercream">Vanilla Sponge Cake</span></p>
+            <p><span class="tooltip" title="A velvety red cake with cream cheese frosting">Red Velvet Cake</span></p>
+        </div>
+        <h3>Fillings</h3>
+        <div>
+            <p><span class="tooltip" title="Rich, chocolatey filling">Chocolate Fudge</span></p>
+            <p><span class="tooltip" title="Creamy and tangy filling">Cream Cheese Mousse</span></p>
+            <p><span class="tooltip" title="Sweet and fruity filling">Strawberry Mousse</span></p>
+        </div>
+        <h3>Specialty Items</h3>
+        <div>
+            <p><span class="tooltip" title="A grand multi-layered cake for weddings">Wedding Cakes</span></p>
+            <p><span class="tooltip" title="Decorated cupcakes perfect for any occasion">Cupcakes</span></p>
+            <p><span class="tooltip" title="Special seasonal treats">Seasonal Items</span></p>
+        </div>
+    </div>
+
+    <h2>Our Cakes Gallery</h2>
+    <p>Here are some examples of cakes made at The Cake Place. Click any of the images to see a bigger version!</p>
+    <div class="gallery">
+        <img src="https://cakebon.com/wp-content/uploads/2020/06/Cakebon-Steve-IMAGE-14-V1-Web.jpg" alt="Cake 1" class="gallery-img">
+        <img src="https://easycakefactory.com/wp-content/uploads/2022/03/R1.jpg" alt="Cake 2" class="gallery-img">
+        <img src="https://baranbakery.com/wp-content/uploads/2022/01/10-inch-cake-683x1024.jpg" alt="Cake 3" class="gallery-img">
+        <img src="https://pastrieslikeapro.com/wp-content/uploads/2022/01/classic-birthday-cake.jpg" alt="Cake 4" class="gallery-img">
+        <img src="https://preppykitchen.com/wp-content/uploads/2018/04/Funfetti-cake-recipe-new-500x500.jpg" alt="Cake 5" class="gallery-img">
+        <img src="https://www.tasteofhome.com/wp-content/uploads/2022/02/vanilla-birthday-cake-FT22_268207_F_0124_6-copy.jpg" alt="Cake 6" class="gallery-img">
+    </div>
+
+    <div id="lightbox">
+        <img id="lightbox-img" src="" alt="Lightbox Image">
+        <span class="close-btn" onclick="$('#lightbox').fadeOut()">X</span>
+    </div>
+
+    <!-- New Button for Special Offers -->
+    <button id="fadeInOutBtn">Special Offers</button>
+
+    <!-- New Section for Special Offers -->
+    <div class="fade-section" id="fadeSection">
+        <h3>Special Offers</h3>
+        <p>Enjoy discounts on our premium cakes! Limited time offer.</p>
+    </div>
+
+    <!-- New About Section -->
+    <div class="about-text">
+        <h3>About The Cake Place</h3>
+        <p>At The Cake Place, we pride ourselves on offering a wide variety of cakes and desserts that cater to all dietary needs, including dairy-free and gluten-free options. We also offer seasonal specials and limited-time offers to keep our menu fresh and exciting.</p>
+    </div>
+
+    <!-- Customer Testimonials Section -->
+    <h2 style="background-color: #ffcccb; padding: 10px;">What Our Customers Say</h2>
+    <div class="testimonials">
+        <p><strong>Jane Doe</strong>: "The best cakes I've ever had! Their chocolate cake is out of this world!"</p>
+        <p><strong>John Smith</strong>: "I love the gluten-free options. Everything was so delicious and beautifully made."</p>
+        <p><strong>Alice Brown</strong>: "Their wedding cakes are stunning! Highly recommend for any special occasion."</p>
+    </div>
+
+    <!-- FAQ Section -->
+    <h2 style="background-color: #ffcccb; padding: 10px;">Frequently Asked Questions</h2>
+    <div class="faq">
+        <p class="question">What flavors do you offer?</p>
+        <p class="answer">We offer a wide variety of cake flavors including chocolate, vanilla, red velvet, and seasonal specialties.</p>
+
+        <p class="question">Do you offer gluten-free or dairy-free cakes?</p>
+        <p class="answer">Yes! We offer both gluten-free and dairy-free options to cater to dietary needs. Please ask for our special menu.</p>
+
+        <p class="question">Can I customize my cake?</p>
+        <p class="answer">Absolutely! You can choose the cake flavor, filling, frosting, and decorations to create the perfect cake for any occasion.</p>
+    </div>
+
+    <!-- jQuery for Interactivity -->
+    <script>
+        $(document).ready(function() {
+            // Accordion functionality
+            $(".accordion h3").click(function() {
+                $(this).next("div").slideToggle();
+                $(".accordion div").not($(this).next()).slideUp();
+            });
+
+            // Lightbox functionality
+            $(".gallery-img").click(function() {
+                $("#lightbox-img").attr("src", $(this).attr("src"));
+                $("#lightbox").fadeIn();
+            });
+
+            $("#lightbox").click(function() {
+                $(this).fadeOut();
+            });
+
+            // Show/Hide Special Menu
+            $("#toggleSectionBtn").click(function() {
+                $("#extraMenu").toggle();
+            });
+
+            // Fade In/Out Special Offers
+            $("#fadeInOutBtn").click(function() {
+                $("#fadeSection").fadeToggle();
+            });
+        });
+    </script>
+</body>
+</html>

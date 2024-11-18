@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Cake Place</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9; /* White background */
+        }
+        header {
+            background-color: #ffcccb; /* Baby blue */
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 10px 15px;
+            background-color: #b2e0b2; /* Baby pink */
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #b2e0b2; /* Darker pink on hover */
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #777;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #ffcccb; /* Baby green for header */
+        }
+        ul {
+            list-style-type: disc; /* Bullet points for lists */
+            padding-left: 20px; /* Indent list */
+        }
+        aside {
+            background-color: #f9f9f9; /* Light lavender for the aside */
+            padding: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #f9f9f9;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+          }
+          button {
+            background-color: #b2e0b2; /* Baby green */
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>About Us - The Cake Place</h1>
+    <h2>Your Trusted Bakery for Every Occasion</h2>
+    <div> 
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='learnmore.html'">Learn More</button>
+        <button onclick="window.location.href='materialize.html'">Materialize</button>
+        <button onclick="window.location.href='jquery.html'">JQuery</button>
+        <button onclick="window.location.href='bootstrap.html'">Bootstrap</button>
+    </div>
+</header>
+
+<section>
+    <h3>Our Story</h3>
+    <p>Welcome to <strong>The Cake Place</strong>, where our passion for baking meets creativity! Founded in 2020, we have dedicated ourselves to crafting exquisite cakes that bring joy to our customers. Our team of skilled bakers and decorators works tirelessly to ensure that each cake is not just a dessert, but a masterpiece.</p>
+    <p>We believe that every celebration deserves a special cake. That’s why we offer a wide range of flavors and designs, allowing you to choose the perfect cake for any occasion, be it a birthday, wedding, or a simple gathering with friends. Our commitment to quality and customer satisfaction is what sets us apart in the world of baking!</p>
+</section>
+
+<section>
+    <img src="https://cdn.pixabay.com/photo/2023/09/04/20/39/cake-8233676_1280.jpg" alt="cake" class="center" style="width:500px;height:300px">
+    <h3>Our Values</h3>
+    <ul>
+        <li><strong>Quality:</strong> We use only the finest ingredients to ensure top-notch flavors.</li>
+        <li><strong>Creativity:</strong> Our team is always ready to bring your cake vision to life.</li>
+        <li><strong>Customer Satisfaction:</strong> Your happiness is our priority; we strive to exceed your expectations.</li>
+        <li><strong>Sustainability:</strong> We are committed to eco-friendly practices in our baking processes.</li>
+    </ul>
+</section>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Facts About Cakes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+
+  <!-- Page Header -->
+  <div class="container">
+    <h4>Fun Facts About Cakes</h4>
+    <p>Expand each section below to learn some fun facts about cakes!</p>
+
+    <!-- Collapsible Structure -->
+    <ul class="collapsible">
+      <!-- Fact 1 -->
+      <li>
+        <div class="collapsible-header"><i class="material-icons">Oldest</i></div>
+        <div class="collapsible-body">
+          <p>The oldest known cake recipe dates back to ancient Rome and was called "Satura." It was a heavy, bread-like dessert made with nuts, barley, and honey, very different from the fluffy cakes we enjoy today!</p>
+        </div>
+      </li>
+
+      <!-- Fact 2 -->
+      <li>
+        <div class="collapsible-header"><i class="material-icons">Tallest</i></div>
+        <div class="collapsible-body">
+          <p>The world record for the tallest cake ever made is 108 feet tall, created in 2011 in Indonesia. This incredible cake was crafted to celebrate the country's independence day and took an entire team of bakers to complete!</p>
+        </div>
+      </li>
+
+      <!-- Fact 3 -->
+      <li>
+        <div class="collapsible-header"><i class="material-icons">Birthdays</i></div>
+        <div class="collapsible-body">
+          <p>The tradition of birthday cakes dates back to ancient Greece, where people would make round cakes to honor Artemis, the goddess of the moon. These cakes were decorated with candles to mimic the moonlight!</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Materialize JavaScript and Initialization -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.collapsible');
+      M.Collapsible.init(elems);
+    });
+  </script>
+</body>
+</html>
+
+
+
+
+<section>
+    <h3>Our Best Sellers</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Cake Type</th>
+                <th>Flavor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Classic Birthday Cake</td>
+                <td>Vanilla or Chocolate</td>
+            </tr>
+            <tr>
+                <td>Elegant Wedding Cake</td>
+                <td>Red Velvet or Lemon</td>
+            </tr>
+            <tr>
+                <td>Special Occasion Cake</td>
+                <td>Carrot Cake</td>
+            </tr>
+            <tr>
+                <td>Custom Theme Cake</td>
+                <td>Variety of Flavors</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<footer>
+    <p>If you want to know more about us, feel free to reach out! &copy; 2024 The Cake Place. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
